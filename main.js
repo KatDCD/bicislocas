@@ -1,41 +1,10 @@
-function validateName () {
-  /* Traer valores de formulario */
+function validateForm() {
   const name = $("#name").val();
-
-  /* Valido el largo del nombre */
-  if (name.lenght > 3 && name.lenght < 8) {
-    console.log (name);
+  if (name.length < 3 || name.length < 8) {
+    alert("Nombre y apellido no puede ser menor a 3 caracteres ni mayor a 8 caracteres.");
   }
-  else if {
-    alert ("Este campo no puede estar vacío ni ser menor a 3 caracteres.")
-  }
-  validateLastname ()
 }
 
-function validateLastname () {
-  /* Traer valores de formulario */
-  const lastname = $("#lastname").val();
-
-  /* Valido el largo del nombre */
-  if (lastname.lenght > 3) {
-    console.log (lastname);
-  }
-  else if {
-    alert ("Este campo no puede estar vacío ni ser menor a 3 caracteres.")
-  }
-
-}
-
-function email () {
-  /* Traer valores de formulario */
-  const email = $("#email").val();
-
-  /* Valido el largo del nombre */
-  if (email.lenght > 3) {
-    console.log (email);
-  }
-  else {
-    alert ("Este campo no puede estar vacío ni ser menor a 3 caracteres.")
-  }
-  
-}
+//|| lastname, lenght < 3 || lastname.lenght < 8)
+// || name.lenght > 8
+//const lastname = $("#lastname").val();
